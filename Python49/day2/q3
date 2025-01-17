@@ -1,0 +1,38 @@
+op1 = int(input("Enter First Operand :"))
+op2 = int(input("Enter Second Operand :"))
+op = input("Enter Operator :")
+if op == '+':
+    add = op1 + op2
+    print("Addition is :",add)
+elif op == '-':
+    sub = op1 - op2
+    print("Subtraction is:",sub)
+elif op == '*':
+    mul = op1 * op2
+    print("Multiplication is :", mul)
+elif op == '/':
+    div = op1 / op2
+    print("Division is :",div)
+else:
+    print("Enter Proper Operator")
+
+# no diffence between these code, just for practice:
+
+# op1 = int(input("Enter the first Operand : "));
+# op2 = int(input("Enter the second Operand : "));
+# op = input ("Enter your operator : ");
+
+# if op == "+":
+#     add = op1+op2;
+#     print("The addition of given two Operand is ",add);
+# elif op == '-':
+#     sub = op1-op2;
+#     print("The substraction of given Operands is",sum);
+# elif op == '*':
+#     product = op1*op2;
+#     print("The product of given Operands is" ,product);
+# elif op == '/':
+#     division = op1/op2;
+#     print("The division of given operands is ", division);
+# else:
+#     print("choose the basic and correct operands!");
