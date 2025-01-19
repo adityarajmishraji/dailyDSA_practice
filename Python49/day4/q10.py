@@ -1,6 +1,6 @@
-a = int(input("Enter A Number"))
-b = int(input("Enter B Number"))
-c = int(input("Enter C Number"))
+a = int(input("Enter A Number : "))
+b = int(input("Enter B Number : "))
+c = int(input("Enter C Number : "))
 
 add = a + b + c
 
