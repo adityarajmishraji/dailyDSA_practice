@@ -1,4 +1,4 @@
-number = int(input("Enter any number ;"))
+number = int(input("Enter any number :"))
 
 total = 0
 count = 0
