@@ -50,7 +50,7 @@ int main() {
 
     return 0;
 }
-// Sample input and expected out put
+// Sample input and expected output
 
 // Enter the number of vertices & edges: 4 3
 // Enter the edges (u v):
