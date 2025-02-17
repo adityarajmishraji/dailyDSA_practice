@@ -1,20 +1,23 @@
-public class Job {
-    // properties
-    // id, profile, desc, technology
-
+public class job {
+    // Properties
     private int id;
     private String profile;
     private String tech;
+    private String desc; // Added missing description field
 
-    public Job() {
+    // Default constructor
+    public job() {
     }
 
-    public Job(int id, String profile, String tech) {
+    // Parameterized constructor
+    public job(int id, String profile, String tech, String desc) {
         this.id = id;
         this.profile = profile;
         this.tech = tech;
+        this.desc = desc;
     }
 
+    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -39,12 +42,22 @@ public class Job {
         this.tech = tech;
     }
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    // Overriding toString() method
     @Override
     public String toString() {
-        return "Job{" +
+        return "job{" +
                 "id=" + id +
                 ", profile='" + profile + '\'' +
                 ", tech='" + tech + '\'' +
+                ", desc='" + desc + '\'' +
                 '}';
     }
 }
