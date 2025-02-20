@@ -1,10 +1,33 @@
-number1 = int(input("Enter First Number :"))
-number2 = int(input("Enter Second Number :"))
-add = 0
-# add = number1 / number2
-# always remember,the last operation(Where same variable perform diffrent operation)
-#                                    will be perform or shown in the output
+num1 = float(input("Enter your First number : "))
+num2 = float(input("Enter your Second number : "))
+# for addition
+sum_result = num1 + num2
+print(f"sum : {num1} + {num2} = {sum_result}")
 
-add = number1 + number2
+#for subtraction
+sub_result = num1 - num2
+print(f"subtract : {num1} - {num2} = {sub_result}")
 
-print("Sum of two Number is :",add)
+#for Multiplication
+product_result = num1 * num2
+print(f"Multiplication : {num1} * {num2} = {product_result}")
+
+# for Division
+# div_result = num1 / num2
+# print(f"subtract : {num1} / {num2} = {div_result}")
+
+# OR we show the logical error(arithmatic error) i.e- We have shows error on divisible of 0.
+
+if num2 == 0:
+    print("Please use integer values except 0 in Denominator!!!")
+else:
+    print(num1 / num2)
+
+a = int(input("Enter the value of a : "))
+b = int(input("Enter the value of b : "))
+
+#for Modules
+mod_result = a // b
+print(f"Modules : {a} // {b} = {mod_result}")
+
+
