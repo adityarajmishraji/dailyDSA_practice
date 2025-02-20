@@ -16,7 +16,7 @@ print(f"Multiplication : {num1} * {num2} = {product_result}")
 # div_result = num1 / num2
 # print(f"subtract : {num1} / {num2} = {div_result}")
 
-# OR we show the logical error(arithmatic error) i.e- We have shows error on divisible of 0.
+# OR we show the logical error(ZeroDivisionError) i.e- We have shows error on divisible of 0.
 
 if num2 == 0:
     print("Please use integer values except 0 in Denominator!!!")
