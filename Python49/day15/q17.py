@@ -52,7 +52,7 @@ def print_calendar(year, month):
         if (first_day + day) % 7 == 0:  # New line after Saturday
             print()
     
-    print("\n")8888888888
+    print("\n")
 
 # User Input
 year = int(input("Enter Year: "))
