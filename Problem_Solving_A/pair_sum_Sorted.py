@@ -17,6 +17,7 @@ def find_pair(nums, target):
 
     while left < right:
         current_sum = nums[left] + nums[right]
+
         if current_sum == target:
             result.append([left, right])
             left += 1
@@ -28,8 +29,10 @@ def find_pair(nums, target):
 
     return result if result else []
 
-# Test cases
-test1 = find_pair([-5, -2, 3, 4, 6], 7)  # Expected: [2, 3]
-test2 = find_pair([1, 1, 1], 2)          # Expected: multiple valid outputs
+# ✅ Test cases
+test1 = find_pair([-5, -2, 3, 4, 6], 7)   # Expected: [[2, 3]]
+test2 = find_pair([1, 1, 1], 2)           # Expected: multiple valid outputs
 
-test1, test2
+# Print results
+print("Test 1:", test1)
+print("Test 2:", test2)
