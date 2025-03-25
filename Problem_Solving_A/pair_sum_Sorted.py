@@ -29,7 +29,7 @@ def find_pair(nums, target):
 
     return result if result else []
 
-# ✅ Test cases
+# Test cases
 test1 = find_pair([-5, -2, 3, 4, 6], 7)   # Expected: [[2, 3]]
 test2 = find_pair([1, 1, 1], 2)           # Expected: multiple valid outputs
 
