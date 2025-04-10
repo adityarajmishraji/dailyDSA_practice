@@ -26,7 +26,6 @@ class naturalSum{
         return sum;
     }
 
-    // Driver code
     public static void main(String args[])
     {
         int n = 5;
