@@ -18,3 +18,41 @@
 // 0 ≤ arr[i] ≤ 105
 
 
+// User function Template for Java
+
+class Solution {
+    void pushZerosToEnd(int[] arr) {
+        // code here
+        int n = arr.length;
+        int lastNonZeroIndex = 0;
+        
+        // Move all non-zero elements to the front
+        for (int i=0; i < n; i++)
+        {
+            if(arr[i] != 0)
+            {
+                arr [lastNonZeroIndex] = arr[i];
+                lastNonZeroIndex++;
+            }
+        }
+        // Fill the rest with Zeros
+        for(int i = lastNonZeroIndex; i < n; i++)
+        {
+            arr[i]=0;
+        }
+    }
+    
+    // Example use
+    public void main(String[] args){
+        int[] arr = {1,2,0,4,3,0,5,0};
+        pushZerosToEnd(arr);
+        for(int num : arr){
+            System.out.print(num + " ");
+        }
+    }
+    
+}
+
+
+// Do you know about Error: Main method is not static in class Solution, please define the main method as:
+//    public static void main(String[] args). Because once we make it static then it again shows error.
